@@ -1,8 +1,8 @@
 import pandas as pd
 
-# Unduh data dari tautan
+# Download data from link
 url = 'https://sipsn.menlhk.go.id/sipsn/public/data/timbulan'
 data = pd.read_html(url)[0]
 
-# Menyimpan data ke file CSV untuk kemudahan
+# Save data to CSV file for convenience
 data.to_csv('timbulan_sampah.csv', index=False)

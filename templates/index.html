@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Visualisasi Timbulan Sampah</title>
+    <title>Waste Generation Visualization</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,28 +14,28 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="mt-5">Visualisasi Timbulan Sampah</h1>
+      <h1 class="mt-5">Waste Generation Visualization</h1>
 
-      <h2>Total Sampah Tahunan di Setiap Provinsi (2023)</h2>
+      <h2>Total Annual Waste in Each Province</h2>
       <img
-        src="{{ url_for('static', filename='total_sampah_tahunan_2023.png') }}"
+        src="{{ url_for('static', filename='total_sampah_tahunan.png') }}"
         alt="Total Sampah Tahunan 2023"
       />
 
-      <h2>Rata-rata Timbulan Sampah Tahunan di Setiap Provinsi</h2>
+      <h2>Average Annual Waste Generation in Each Province</h2>
       <img
         src="{{ url_for('static', filename='rata2_sampah_tahunan.png') }}"
         alt="Rata-rata Timbulan Sampah Tahunan"
       />
 
-      <h2>Provinsi dengan Timbulan Sampah Terbanyak Setiap Tahun</h2>
+      <h2>Provinces with the Most Waste Generation Every Year</h2>
       <ul>
         {% for index, row in provinsi_terbanyak.iterrows() %}
         <li>{{ row['Tahun'] }}: {{ row['Provinsi'] }}</li>
         {% endfor %}
       </ul>
 
-      <h2>Provinsi dengan Timbulan Sampah Paling Sedikit Setiap Tahun</h2>
+      <h2>Provinces with the Least Waste Generation Every Year</h2>
       <ul>
         {% for index, row in provinsi_tersedikit.iterrows() %}
         <li>{{ row['Tahun'] }}: {{ row['Provinsi'] }}</li>

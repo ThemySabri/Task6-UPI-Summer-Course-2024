@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Membaca data dari file CSV
+    # Read data from CSV files
     total_sampah_tahunan = pd.read_csv('total_sampah_tahunan.csv')
     rata2_sampah_tahunan = pd.read_csv('rata2_sampah_tahunan.csv')
     provinsi_terbanyak = pd.read_csv('provinsi_terbanyak.csv')
