@@ -1,4 +1,4 @@
-# Assigntment 9B: Waste Generation Analysis and Visualization by Group 4
+# Assignment 9B: Waste Generation Analysis and Visualization by Group 4
 
 ## List of Members
 
