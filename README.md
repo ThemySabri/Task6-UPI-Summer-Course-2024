@@ -1,4 +1,4 @@
-# Group 4 UPI Summer Course 2024
+# Assigntment 9B: Waste Generation Analysis and Visualization by Group 4
 
 ## List of Members
 
@@ -8,3 +8,11 @@
 4. Rifa Sania
 5. Rifanny Lysara Annastasya
 6. Themy Sabri Syuhada
+
+## Program Description
+
+This project aims to analyze and visualize the annual waste generation data for different provinces in Indonesia. The application is built using Flask and provides a graphical representation of waste data, including total waste generation for each year and average annual waste generation for each province. Additionally, it identifies the province with the highest and lowest waste generation each year.
+
+## Screenshot
+
+![screenshot 1](image.png)
